@@ -1,7 +1,7 @@
 #!/bin/bash
 # 编译「拾页」。
 #   bash build.sh        编译本机版本，装到 ~/Applications 并启动
-#   bash build.sh dist   编译 Apple 芯片和 Intel 通用版，打包成 dist/拾页-<版本>.zip，用来发给别人
+#   bash build.sh dist   编译 Apple 芯片和 Intel 通用版，打包成 dist/Shiye-<版本>.zip，用来发给别人
 set -euo pipefail
 cd "$(dirname "$0")"
 
@@ -27,7 +27,7 @@ build() {
 if [[ ${1:-} == dist ]]; then
   build "$tmp/拾页.app" arm64 x86_64
   mkdir -p dist
-  zip="dist/拾页-$ver.zip"
+  zip="dist/Shiye-$ver.zip"  # 用英文名：GitHub Release 会去掉附件名里的中文
   rm -f "$zip"
   ditto -c -k --keepParent "$tmp/拾页.app" "$zip"
   echo "已打包: $PWD/$zip"

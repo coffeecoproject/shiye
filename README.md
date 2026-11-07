@@ -14,7 +14,7 @@ macOS 菜单栏小工具，用来暂存想反复查看的网页，不用一直�
 
 ### 下载安装
 
-1. 在 [Releases](https://github.com/coffeecoproject/shiye/releases) 下载最新的 `拾页-<版本>.zip`，双击解压。
+1. 在 [Releases](https://github.com/coffeecoproject/shiye/releases) 下载最新的 `Shiye-<版本>.zip`，双击解压。
 2. 把 `拾页.app` 拖到「应用程序」文件夹。
 3. 第一次打开时，系统会提示无法验证开发者（拾页没有经过苹果公证）。点「完成」，然后打开「系统设置 → 隐私与安全性」，在页面下方点「仍要打开」。之后就能正常打开了。
 

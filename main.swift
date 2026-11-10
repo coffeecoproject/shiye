@@ -85,6 +85,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate, NSWind
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         setIcon(icon)
         menu.delegate = self
+        // 网页行是自定义视图、没有 action，自动启用会把它们判为禁用，禁用项不会高亮。
+        menu.autoenablesItems = false
         loginItem.target = self
         contextMenu.addItem(loginItem)
         contextMenu.addItem(.separator())
